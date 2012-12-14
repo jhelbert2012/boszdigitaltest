@@ -1,0 +1,127 @@
+body {
+  width: 600px;
+  margin: auto;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  background-color: white;
+  background-image: url("/etc/designs/training/imgs/paper.jpg");
+  background-repeat: no-repeat;
+}
+  
+body.narrow{
+  width: 200px;
+  margin: auto;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  background-color: white; }
+  
+body.print{
+  margin: 0px;
+  font-family: Georgia, "Times New Roman",
+        Times, serif;
+  background-color: white; }
+
+table{
+    border-spacing: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 0px;
+}
+
+tr th{
+    background-color: #0099CC;
+}
+
+tr.odd-line td{
+    background-color: #00CCCC;
+}
+
+hr{
+    border: 1px dotted gray;
+    width: 80%;
+}
+
+/*
+    Look and feel
+*/
+
+.basictitle h1{
+    margin: 0px;
+    font-family: Verdana, sans;
+}
+
+.header-container{
+    min-height: 150px;
+    /*border: 2px dashed red;
+    background-color: lightSalmon;*/
+}
+
+
+.headernavigation ul{
+    list-style-type:none;    
+    margin:0;
+    padding:0;
+    padding-top:6px;
+    padding-bottom:6px;
+}
+
+.headernavigation{
+    padding: 2px 0px 2px 0px;
+    border-top: 1px solid red;
+    border-bottom: 3px solid red;
+}
+
+.headernavigation li{
+    display: inline;
+    padding-left: 5px;
+}
+
+.headernavigation a:link, .headernavigation a:visited
+{
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#B80000;
+    text-align:center;
+    padding:6px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+.headernavigation a:hover,a:active
+{
+    background-color:#900000;
+}
+
+
+.content-container{
+    min-height: 100px;
+    margin: 10px 20px 10px 20px;
+   /*border: 2px solid blue*/
+
+}
+
+.content-container .listproperties{
+    border: 2px dotted blue;
+    background-color: lightblue;
+}
+
+.footer-container {
+    border-top: 1px solid black;
+    /*border: 2px dashed orange;
+    background-color: lightyellow;*/
+}
+.footer-container .disclaimer p{
+    text-align: center;
+    font-style: italic;
+}
+
+.footer-container .links-container div{
+    float: left;
+    padding-right: 5px;
+}
+
+.mainimage {
+	float: left;
+	margin-right: 10px;
+}
+

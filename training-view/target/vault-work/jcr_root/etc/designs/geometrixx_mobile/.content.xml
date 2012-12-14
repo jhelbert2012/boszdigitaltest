@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2011-09-27T15:33:11.620+02:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Geometrixx Mobile Demo Design"
+        sling:resourceType="wcm/core/components/designer">
+        <teaserpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/flash,/libs/foundation/components/image,/libs/foundation/components/slideshow,/libs/foundation/components/text,/libs/foundation/components/textimage]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </teaserpage>
+        <pack jcr:primaryType="nt:unstructured">
+            <vlt:definition jcr:primaryType="nt:unstructured">
+                <filter
+                    jcr:primaryType="nt:unstructured"
+                    components="[/libs/cq/packaging/components/pack/definition/filter]"/>
+                <screenshots
+                    jcr:primaryType="nt:unstructured"
+                    components="[/libs/cq/packaging/components/pack/definition/screenshot]"/>
+            </vlt:definition>
+        </pack>
+        <collectionpage jcr:primaryType="nt:unstructured">
+            <vlt:definition jcr:primaryType="nt:unstructured">
+                <filter
+                    jcr:primaryType="nt:unstructured"
+                    components="[cq/workflow/components/collection/definition/resource]"/>
+            </vlt:definition>
+        </collectionpage>
+        <formpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Form">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </formpage>
+        <segmentpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/cq/personalization/components/traits/logic/or,/libs/cq/personalization/components/traits/logic/and]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+            <orpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/cq/personalization/components/traits/logic/or"
+                components="[/libs/cq/personalization/components/traits/tagcloud,/libs/cq/personalization/components/traits/profileproperty/age,/libs/cq/personalization/components/traits/profileproperty/generic,/libs/cq/personalization/components/traits/script,/libs/cq/personalization/components/traits/pagedata/generic,/libs/cq/personalization/components/traits/pagedata/hits,/libs/cq/personalization/components/traits/surferinfo/keywords,/libs/cq/personalization/components/traits/surferinfo/iprange,/libs/cq/personalization/components/traits/reference,/libs/cq/personalization/components/traits/logic/or,/libs/cq/personalization/components/traits/logic/and]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </orpar>
+            <andpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/cq/personalization/components/traits/logic/and"
+                components="[/libs/cq/personalization/components/traits/tagcloud,/libs/cq/personalization/components/traits/profileproperty/age,/libs/cq/personalization/components/traits/profileproperty/generic,/libs/cq/personalization/components/traits/script,/libs/cq/personalization/components/traits/pagedata/generic,/libs/cq/personalization/components/traits/pagedata/hits,/libs/cq/personalization/components/traits/surferinfo/keywords,/libs/cq/personalization/components/traits/surferinfo/iprange,/libs/cq/personalization/components/traits/reference,/libs/cq/personalization/components/traits/logic/or,/libs/cq/personalization/components/traits/logic/and]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </andpar>
+        </segmentpage>
+        <mobilecontentpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2011-06-01T14:48:41.213+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/download,/libs/foundation/components/reference,/libs/foundation/components/table,/libs/foundation/components/text,/libs/foundation/components/textimage,/libs/foundation/components/title,/libs/foundation/components/video,/libs/foundation/components/mobileimage,/libs/foundation/components/mobilelist,/libs/foundation/components/mobilereference,/libs/foundation/components/mobiletextimage]">
+                <section
+                    jcr:primaryType="nt:unstructured"
+                    div.padding="8px 0 0 0"/>
+                <mobilereference
+                    jcr:lastModified="{Date}2010-04-21T21:46:25.635+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/mobilereference"
+                    componentMapping="foundation/components/textimage,foundation/components/mobiletextimage&#xa;foundation/components/image,foundation/components/mobileimage"/>
+                <mobileimage
+                    jcr:lastModified="{Date}2010-10-06T16:57:32.602+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/mobileimage"
+                    maxWidth="280"/>
+                <mobiletextimage
+                    jcr:lastModified="{Date}2010-05-07T14:21:14.128+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured">
+                    <image
+                        jcr:lastModified="{Date}2010-05-07T14:21:14.128+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/image"
+                        maxWidth="295"/>
+                </mobiletextimage>
+                <chart
+                    jcr:primaryType="nt:unstructured"
+                    bgColor="FFFFFF"
+                    dataColors="0072AA:5F87B0:2F4968:A0A0A0"
+                    labelColor="444F55"
+                    lineColor="444F55"/>
+                <video
+                    jcr:lastModified="{Date}2011-06-01T15:21:02.951+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/video"
+                    profiles="[hq,firefoxhq]"
+                    width="95%"/>
+            </par>
+            <logo
+                jcr:lastModified="{Date}2010-10-08T16:13:59.875+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/mobilelogo"
+                imageRotate="0">
+                <image/>
+            </logo>
+            <footer
+                jcr:lastModified="{Date}2010-03-24T12:10:25.519+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/mobilefooter"
+                linkDisclaimer="/content/geometrixx_mobile/en/company/legal"
+                linkDisclaimerText="Legal statement"
+                linkPrivacyPolicy="/content/geometrixx_mobile/en/company/privacy"
+                linkPrivacyPolicyText="Privacy policy"
+                text="Adobe Systems Incorporated. All rights reserved."/>
+        </mobilecontentpage>
+        <mobiletraderpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2011-09-27T13:17:04.418+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="geometrixx/components/mobiletrader/parsys"
+                components="group:MobileTrader"/>
+        </mobiletraderpage>
+    </jcr:content>
+    <images/>
+    <static.css/>
+    <favicon.ico/>
+    <webclip.png/>
+    <webclip-precomposed.png/>
+    <trader/>
+</jcr:root>

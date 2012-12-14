@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Links"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Links"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Block title"
+                    fieldLabel="Title"
+                    name="./title/text"
+                    xtype="textfield"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}true"
+                    collapsible="{Boolean}true"
+                    title="Link list"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <multi
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Multi-Field"
+                            hideLabel="{Boolean}true"
+                            name="./links/links"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="nt:unstructured"
+                                xtype="linkWidget"/>
+                        </multi>
+                        <style
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Style to be applied to the anchor tag"
+                            fieldLabel="Style"
+                            name="./links/style"
+                            xtype="textfield"/>
+                        <multivid
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Video"
+                            hideLabel="{Boolean}true"
+                            name="./links/video"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="nt:unstructured"
+                                optionsProvider="&#xa;Ejst.provideOptions"
+                                xtype="videoLinkWidget"/>
+                        </multivid>
+                    </items>
+                </link>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="com.boszdigital.training.services.GoodbyeWorldService" name="%com.boszdigital.training.services.GoodbyeWorldService.name" description="%com.boszdigital.training.services.GoodbyeWorldService.description"/>
+    <OCD id="com.boszdigital.training.services.ListPropertiesService" name="%com.boszdigital.training.services.ListPropertiesService.name" description="%com.boszdigital.training.services.ListPropertiesService.description"/>
+    <Designate pid="com.boszdigital.training.services.GoodbyeWorldService">
+        <Object ocdref="com.boszdigital.training.services.GoodbyeWorldService"/>
+    </Designate>
+    <Designate pid="com.boszdigital.training.services.ListPropertiesService">
+        <Object ocdref="com.boszdigital.training.services.ListPropertiesService"/>
+    </Designate>
+</metatype:MetaData>

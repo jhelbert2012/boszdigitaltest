@@ -1,0 +1,181 @@
+/*
+ * Copyright 1997-2010 Day Management AG
+ * Barfuesserplatz 6, 4001 Basel, Switzerland
+ * All Rights Reserved.
+ *
+ * This software is the confidential and proprietary information of
+ * Day Management AG, ("Confidential Information"). You shall not
+ * disclose such Confidential Information and shall use it only in
+ * accordance with the terms of the license agreement you entered into
+ * with Day.
+ */
+
+html {
+    background-color: #000000;
+}
+
+body {
+    margin:0;
+    background-color: #0272AA;
+}
+
+#wrapper {
+    background-color: #0272AA;
+    color: #000000;
+    font-family: Lucida Grande, Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    text-align: left;
+}
+
+#wrapper img {
+    border: 0;
+}
+
+#wrapper a {
+    color: #839BB2;
+}
+
+#wrapper div.logo {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+#wrapper div.parsys {
+    padding: 20px 10px;
+}
+
+#wrapper div.parbase {
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f4f7fc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#wrapper div.parbase.textimage div.image {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#wrapper div.parbase.image img,
+#wrapper div.parbase.textimage img {
+    width:100%;
+}
+
+#wrapper div.text p {
+    margin-top: 0;
+}
+
+#wrapper div.footer.mobilefooter {
+    color: #C8E1ED;
+    font-size: 8pt;
+    padding: 10px 20px;
+}
+
+#wrapper div.footer.mobilefooter a {
+    color: #C8E1ED;
+    text-decoration: underline;
+}
+
+#wrapper div.mobilelist {
+    padding: 0;
+}
+
+#wrapper div.text {
+    color: #666666;
+    font-size: 15px;
+}
+
+#wrapper div.mobilelist ul {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#wrapper div.mobilelist ul li {
+    background: url("images/bg_listitems.png") no-repeat scroll right center #f4f7fc;
+    border-top: 1px solid #9DCAE1;
+    height: 42px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper div.mobilelist ul li.first {
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    border-top: medium none;
+}
+
+#wrapper div.mobilelist ul li.item {
+    border-bottom: medium none;
+}
+
+#wrapper div.mobilelist ul li.last {
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+#wrapper div.mobilelist ul li p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#wrapper div.mobilelist ul li p a {
+    color: #006699;
+    display: block;
+    font-weight: bold;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#wrapper div.table table, #wrapper div.table td {
+    border: 0;
+    font-size: 11px;
+}
+
+#wrapper div.table td {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    vertical-align: top;
+}
+
+#wrapper h1 {
+    font-size: 24px;
+    line-height: 27px;
+    color: #666666;
+    font-family: "Lucida Grande","Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    padding-top: 1px;
+    display: block;
+    text-transform: uppercase;
+}
+
+#wrapper h2 {
+    font-size: 20px;
+    line-height: 18px;
+    color: #666666;
+    display: block;
+    margin-bottom: 2px;
+}
+
+#wrapper div.spacer {
+    display: none;
+}
+
+#wrapper div.title {
+    -moz-border-radius:10px 10px 10px 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:#F4F7FC;
+    margin-bottom:10px;
+    padding:10px;
+}

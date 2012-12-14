@@ -1,0 +1,23 @@
+/*----------------------------------------------------------------------------*/
+/* Static CSS only for blog entry pages                                       */
+/*----------------------------------------------------------------------------*/
+
+/* Begin CQ components */
+
+/* End CQ components */
+
+/*----------------------------------------------------------------------------*/
+
+/*
+Theme Name: Kubrick
+Theme URI: http://wordpress.org/
+Description: The default WordPress theme complete with customizable header and widgets.
+Version: 1.5
+Author: Michael Heilemann
+Author URI: http://binarybonsai.com/
+Tags: two columns, fixed width, custom header, blue
+*/
+
+/* Inline CSS copied here from HTML */
+
+#page { background: url("resources/kubrickbgwide.jpg") repeat-y top; border: none; }

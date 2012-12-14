@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2012-11-30T13:14:20.351-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Training"
+        sling:resourceType="wcm/core/components/designer">
+        <infopage jcr:primaryType="nt:unstructured">
+            <navigation
+                jcr:lastModified="{Date}2012-11-29T12:52:03.202-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/headernavigation"
+                initialPath="/content/home"/>
+            <logo
+                jcr:lastModified="{Date}2012-11-29T12:59:36.534-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/traininglogo"
+                imageReference="/content/dam/geometrixx/icons/news_new.png"
+                imageRotate="0"
+                maxWidth="165"/>
+            <par
+                jcr:lastModified="{Date}2012-11-29T15:44:55.150-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Training]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+            <smallparsys
+                jcr:lastModified="{Date}2012-11-29T14:40:57.648-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/limitedparsys"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </smallparsys>
+        </infopage>
+        <landingpage jcr:primaryType="nt:unstructured">
+            <navigation
+                jcr:lastModified="{Date}2012-11-29T12:58:44.460-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/headernavigation"
+                initialPath="/content/home"/>
+            <logo
+                jcr:lastModified="{Date}2012-11-29T13:00:23.117-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/traininglogo"
+                imageReference="/content/dam/geometrixx/icons/news_new.png"
+                imageRotate="0"
+                maxWidth="165"/>
+        </landingpage>
+        <articlepage jcr:primaryType="nt:unstructured">
+            <logo
+                jcr:lastModified="{Date}2012-11-30T13:00:37.283-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/traininglogo"
+                imageReference="/content/dam/geometrixx/icons/news_new.png"
+                imageRotate="0"
+                maxWidth="165"/>
+            <paragraphs
+                jcr:lastModified="{Date}2012-11-30T13:11:19.746-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:General">
+                <section jcr:primaryType="nt:unstructured"/>
+            </paragraphs>
+            <navigation
+                jcr:lastModified="{Date}2012-11-30T13:14:20.351-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="training/components/content/headernavigation"
+                initialPath="/content/home"/>
+        </articlepage>
+    </jcr:content>
+    <static.css/>
+    <imgs/>
+</jcr:root>

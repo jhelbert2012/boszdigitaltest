@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/training"
+        cq:lastModified="{Date}2012-11-29T10:17:43.252-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/training/templates/landingpage"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home"
+        jcr:uuid="7f71a2e0-ad24-48b9-ac43-ce27139271f7"
+        sling:resourceType="/apps/training/components/page/landingpage">
+        <content jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys">
+                <text
+                    jcr:created="{Date}2012-11-28T13:27:46.903-06:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2012-11-28T13:51:51.270-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/text"
+                    text="&lt;p>Training Content algo&lt;/p>&#xa;&lt;p>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <image
+                    jcr:created="{Date}2012-11-28T13:27:51.242-06:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2012-11-28T13:51:41.900-06:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/image"
+                    fileReference="/content/dam/geometrixx-outdoors/products/glasses/Kelowna.jpg"/>
+            </par>
+        </content>
+        <image
+            jcr:lastModified="{Date}2012-11-28T16:03:02.446-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+        <header jcr:primaryType="nt:unstructured"/>
+        <footer jcr:primaryType="nt:unstructured">
+            <disclaimer
+                jcr:lastModified="{Date}2012-11-29T10:17:43.252-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>Disclaimer from info page&lt;/p>&#xa;&lt;p>&lt;/p>&#xa;"
+                textIsRich="true"/>
+        </footer>
+    </jcr:content>
+    <info-1/>
+    <info-2/>
+    <info-3/>
+    <article-1/>
+</jcr:root>

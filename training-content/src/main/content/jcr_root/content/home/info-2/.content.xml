@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2012-11-29T09:43:40.357-06:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/training/templates/infopage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Info 2"
+        sling:resourceType="/apps/training/components/page/infopage"
+        navTitle="Another page">
+        <header jcr:primaryType="nt:unstructured"/>
+        <image
+            jcr:lastModified="{Date}2012-11-29T09:43:40.355-06:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+</jcr:root>

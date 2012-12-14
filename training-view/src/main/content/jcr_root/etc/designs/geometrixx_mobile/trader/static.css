@@ -1,0 +1,214 @@
+* {
+    font-family: verdana, sans-serif;
+}
+
+.ui-content {
+    padding: 0;
+}
+.tabbar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 74px;
+    border-top: 1px solid #444;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-image: url(/etc/designs/mobile/trader/images/tabbar-button-bg.png);
+}
+
+.tabbar li {
+    float: left;
+    margin: 0;
+    padding-top: 3px;
+    border: 0;
+    font-size: smaller;
+    display: block;
+    text-align: center;
+    border-right: 1px solid #333;
+    border-left: 1px solid #6a6a6a;
+    height: 74px;
+}
+
+.tabbar li:first-child {
+    border-right: 1px solid #333;
+    border-left: 0;
+}
+
+.tabbar li:last-child {
+    border-right: 0;
+    border-left: 1px solid #6a6a6a;
+}
+
+.tabbar ul {
+    border: 0;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.tabbar a {
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.topbar {
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-image: url(/etc/designs/mobile/trader/images/top-bar-bg.png);
+}
+
+.alerts ul {
+    border: 0;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+.alerts li {
+    padding:  10px 20px 10px 20px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid black;
+    background: #f0f0f0;
+}
+
+.alerts li.odd {
+    background: #dcdcdc;
+}
+
+.alerts li h1 {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.alerts li span.details {
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+div.title {
+    padding: 10px 20px 10px 20px;
+}
+div.title h1 {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: #646464;
+}
+
+div.assets-summary {
+    padding: 0 20px 0 20px;
+}
+div.assets-history {
+    padding: 0 20px 0 20px;
+}
+div.advisor {
+    padding: 0 20px 0 20px;
+}
+
+#main_screen {
+    background: #d8d8d8;
+    height:100%;
+}
+
+div.gx_logo {
+    position: absolute;
+    text-align: center;
+    width:100%;
+    top: 100px;
+}
+div.gx_logo img {
+    border: none;
+}
+div.gx_logo a {
+    border: none;
+}
+
+#add_to_home {
+    visibility:hidden;
+    position:absolute;
+    left: 20px;
+    top: 300px;
+    z-index:9999;
+    -webkit-user-select:none;
+    -webkit-box-sizing:border-box;
+    width:280px;
+    font-size:24px;
+    padding:15px;
+    font-family:Arial;
+    background-color: #444;
+    border:1px solid #505050;
+    border-radius:16px;
+    text-shadow: none;
+    color:#fff;
+    text-align: center;
+}
+#add_to_home .arrow {
+    position:absolute;
+    background-color: #444;
+    width:32px; height:32px;
+    -webkit-transform:rotateZ(45deg);
+    bottom:-14px; left:124px;
+    border-top-left-radius: 50px;
+}
+
+.navigator-status {
+    display: inline-block;
+    background-color: orange;
+    box-shadow: 0px 0px 3px orange;
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;
+}
+.navigator-status.online {
+    display: inline-block;
+    background-color: #adff2f;
+    box-shadow: 0px 0px 3px #adff2f;
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;
+}
+#add_to_home.ipad .arrow {
+    top:-17px; bottom:auto; left:50%;
+}
+
+/* Landscape iPhone */
+@media screen and (max-height: 320px) {
+	div.gx_logo {
+        top: 20px;
+    }
+    #add_to_home {
+        top: 160px;
+    }
+    #add_to_home .arrow {
+        bottom:-10px; left:204px;
+    }
+}
+/* Portrait ipad */
+@media screen and (min-width: 768px) {
+	div.gx_logo {
+        top: 300px;
+    }
+    #add_to_home {
+        top: 20px;
+    }
+    #add_to_home .arrow {
+        -webkit-transform:rotateZ(225deg);
+        top: -13px;
+        left:170px;
+    }
+}

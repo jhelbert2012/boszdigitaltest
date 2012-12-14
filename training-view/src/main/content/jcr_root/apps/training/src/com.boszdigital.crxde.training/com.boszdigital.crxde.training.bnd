@@ -1,0 +1,9 @@
+# Export-Package: *
+# Import-Package: *
+Private-Package: com.boszdigital.crxde.training.web
+# Include-Resource: 
+Bundle-Name: CRXDE OSGI Training
+Bundle-Description: 
+Bundle-SymbolicName: com.boszdigital.crxde.training
+Bundle-Version: 1.0.0-SNAPSHOT
+Bundle-Activator: com.boszdigital.crxde.training.web.Activator

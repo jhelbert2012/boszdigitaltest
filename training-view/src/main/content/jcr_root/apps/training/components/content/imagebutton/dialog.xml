@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Image Item"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Button Properties">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <facetext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Text to be overlayed on the button"
+                        fieldLabel="Text"
+                        name="./button/facetext"
+                        xtype="textfield"/>
+                    <padding
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Padding on the button (default 20px)"
+                        fieldLabel="Padding"
+                        name="./button/padding"
+                        xtype="textfield"/>
+                    <imageId
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Adds an id to the image"
+                        fieldLabel="Image id"
+                        name="./image/id"
+                        xtype="textfield"/>
+                    <fontcolor
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Font color use on the button's text"
+                        fieldLabel="Font Color"
+                        name="./font/fontcolor"
+                        xtype="colorfield"/>
+                    <fontfamilybutton
+                        jcr:primaryType="nt:unstructured"
+                        fieldDescription="Font to be used on the button's text"
+                        fieldLabel="Button Font"
+                        name="./font/fontfamilybutton"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <arial
+                                jcr:primaryType="nt:unstructured"
+                                text="Arial"
+                                value="Arial"/>
+                            <neosansintelitalic
+                                jcr:primaryType="nt:unstructured"
+                                text="Neo Sans Intel Italic"
+                                value="NeoSansIntel-Italic"/>
+                            <neosansintellight
+                                jcr:primaryType="nt:unstructured"
+                                text="Neo Sans Intel Light"
+                                value="NeoSansIntel-Light"/>
+                            <neosansintellightitalic
+                                jcr:primaryType="nt:unstructured"
+                                text="Neo Sans Intel Light Italic"
+                                value="NeoSansIntel-LightItalic"/>
+                            <neosansintelmedium
+                                jcr:primaryType="nt:unstructured"
+                                text="Neo Sans Intel Medium"
+                                value="NeoSansIntel-Medium"/>
+                            <neosansintelmediumitalic
+                                jcr:primaryType="nt:unstructured"
+                                text="Neo Sans Intel Medium Italic"
+                                value="NeoSansIntel-MediumItalic"/>
+                            <neosansintelregular
+                                jcr:primaryType="nt:unstructured"
+                                text="Neo Sans Intel Regular"
+                                value="NeoSansIntel"/>
+                            <tahoma
+                                jcr:primaryType="nt:unstructured"
+                                text="Tahoma"
+                                value="Tahoma"/>
+                        </options>
+                    </fontfamilybutton>
+                    <fontsize
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The value is given on pixels and the height can't be larger than the button's height"
+                        fieldLabel="Font size"
+                        name="./font/fontsize"
+                        xtype="textfield"/>
+                    <fontstylebold
+                        jcr:primaryType="cq:Widget"
+                        checked="false"
+                        fieldLabel="Bold"
+                        name="./font/fontstylebold"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <fontstyleitalic
+                        jcr:primaryType="cq:Widget"
+                        checked="false"
+                        fieldLabel="Italic"
+                        name="./font/fontstyleitalic"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <fontstyleunderline
+                        jcr:primaryType="cq:Widget"
+                        checked="false"
+                        fieldLabel="Underline"
+                        name="./font/fontstyleunderline"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <lowercase
+                        jcr:primaryType="cq:Widget"
+                        checked="{Boolean}false"
+                        fieldLabel="Lowercase"
+                        name="./font/lowercase"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Widget"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="./image.img.png"
+                rotateParameter="./image/imageRotate"
+                sizeLimit="100"
+                title="Image"
+                uploadUrl="/tmp/upload_test/*"
+                xtype="smartimage"/>
+            <tab3
+                jcr:primaryType="cq:Widget"
+                cropParameter="./bullet/imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./bullet/fileName"
+                fileReferenceParameter="./bullet/fileReference"
+                mapParameter="./bullet/imageMap"
+                name="./bullet/file"
+                requestSuffix="./image.img.png"
+                rotateParameter="./bullet/imageRotate"
+                sizeLimit="100"
+                title="Bullet"
+                uploadUrl="/tmp/upload_test/*"
+                xtype="smartimage"/>
+        </items>
+    </items>
+</jcr:root>

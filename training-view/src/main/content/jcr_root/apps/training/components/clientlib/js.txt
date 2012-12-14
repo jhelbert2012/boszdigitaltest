@@ -1,0 +1,4 @@
+#base=js
+initWidgets.js
+linkWidget.js
+videoLinkWidget.js

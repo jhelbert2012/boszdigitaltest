@@ -1,0 +1,818 @@
+/*----------------------------------------------------------------------------*/
+/* Static CSS for all blog pages                                              */
+/*----------------------------------------------------------------------------*/
+
+
+/* Begin CQ components */
+
+div.blog.main {
+    min-width:470px;
+    min-height:400px;
+}
+
+div.navigation {
+    margin-bottom:10px;
+}
+
+div.entry {
+    margin-top:3px;
+}
+
+
+div.entry div.comments-count {
+    font-size:1.2em;
+}
+
+.sidebar.parsys {
+}
+
+#sidebar .tagcloud {
+    margin-bottom:14px;
+}
+
+div.section {
+    margin: 20px 0;
+}
+
+div.section.entrytitle {
+    margin-bottom:0;
+}
+
+div.section.entrytext {
+    margin-top:0;
+}
+
+.signin .form_row {
+    clear:both;
+}
+
+.signin .form_leftcol {
+    float:left;
+    width:110px;
+}
+
+.signin-submit {
+    height:0;
+    width:0;
+    position:absolute;
+    top:-100px; /* hack for IE to hide submit button and still enable sign in by hitting enter */
+}
+
+.entry.new {
+    margin-top:20px;
+}
+
+#CQ div.entry-fields-wrap .dummy-input {
+    width: 457px !important;
+}
+
+#CQ div.entry-fields-wrap {
+    margin:30px 0 0 0;
+    width:470px ! important;
+    height:300px ! important;
+}
+
+#CQ div.entry-fields-wrap .x-panel-body {
+    position:static;
+    background-color:transparent;
+}
+
+#CQ div.entry-fields-wrap .x-form-item {
+    margin-bottom:20px ! important;
+}
+
+#CQ div.entry-fields-wrap input.x-form-text.title {
+    font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    width:470px;
+    height:1.6em;
+    font-size:1.6em;
+    font-weight:bold;
+}
+
+#CQ div.entry-fields-wrap iframe {
+    width:100%;
+    height:350px;
+}
+
+#CQ div.entry-fields-wrap div.x-panel-btns-ct,
+#CQ div.entry-fields-wrap div.x-panel-btns-ct td.x-panel-btn-td {
+    padding:0 ;
+}
+
+#CQ div.entry-button-group {
+    margin-bottom:20px;
+}
+
+#CQ label.entry-field-label {
+    padding-bottom:5px;
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+div.comments-count {
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+div.comments-count.replies {
+    font-size:1em;
+}
+
+div.comment {
+    margin-top:14px;
+}
+
+div.comment-header {
+    font-size:0.75em;
+    height:30px;
+    line-height:30px;
+    background-color:#efefef;
+    border-top:solid 1px #bcbcbc;
+}
+
+div.comment-header a {
+    color:#000;
+    text-decoration:none;
+}
+
+div.comment-header-avatar {
+    float:left;
+}
+
+div.comment-header-avatar img {
+    width:24px;
+    height:24px;
+    margin:2px;
+}
+
+div.comment-header-meta {
+}
+
+div.comment-header-time {
+}
+
+div.comment-header cite {
+    float:left;
+    margin:0 10px 0 10px;
+}
+
+div.comment-header cite a {
+    font-weight:bold;
+}
+
+div.comment-body {
+    clear:left;
+    margin-top:5px;
+}
+
+div.comment-replies {
+}
+
+div.comment-replies.tree {
+    padding-left:20px;
+}
+
+form.comment {
+    text-align:left;
+    margin: 0 0 20px;
+    padding:0;
+}
+
+div.comment-error {
+    font-weight:bold;
+    color:#f60;
+}
+
+div.comment-info{
+    width: 190px;
+    margin-bottom:10px;
+}
+
+div.comment-block-author {
+    display: none;
+}
+
+div.comment-block-publish {
+    display: none;
+}
+
+div.submit-block input[type="submit"] {
+    margin-top: 10px;
+}
+
+label.comment-text-label {
+    font-weight: bold;
+}
+
+div.comment-signed-in-text{
+	font-weight: bold;
+	display: none;
+}
+
+span.comment-signed-in-user{
+	font-weight: bold;
+	padding-left: 5px
+}
+
+input.comment-text{
+    margin: 0 10px 7px 0;
+    padding: 2px;
+    font-size: 95%;
+    color: #333;
+    display: block;
+}
+
+textarea.comment-text {
+    margin: 0;
+    padding: 0;
+    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    width: 99%;
+    height: 100px;
+}
+
+div.break {
+    margin:0;
+    padding:0;
+}
+
+.cq-blog-placeholder {
+}
+
+.cq-blog-placeholder-off {
+    display:none;
+}
+
+/* End CQ components */
+
+/*----------------------------------------------------------------------------*/
+
+/*
+Theme Name: Kubrick
+Theme URI: http://wordpress.org/
+Description: The default WordPress theme complete with customizable header and widgets.
+Version: 1.5
+Author: Michael Heilemann
+Author URI: http://binarybonsai.com/
+Tags: two columns, fixed width, custom header, blue
+*/
+
+
+
+/* Begin Typography & Colors */
+body {
+	font-size: 62.5%; /* Resets 1em to 10px */
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	background: #d5d6d7 url("resources/kubrickbgcolor.jpg");
+	color: #333;
+	text-align: center;
+	}
+
+#page {
+	background-color: white;
+	border: 1px solid #959596;
+	text-align: left;
+	}
+
+#header {
+	background: #73a0c5 url("resources/kubrickheader.jpg") no-repeat bottom center;
+	}
+
+#headerimg 	{
+	margin: 7px 9px 0;
+	height: 192px;
+	width: 740px;
+	}
+
+#content {
+	font-size: 1.2em
+	}
+
+.widecolumn .entry p {
+	font-size: 1.05em;
+	}
+
+.narrowcolumn .entry, .widecolumn .entry {
+	line-height: 1.4em;
+	}
+
+.widecolumn {
+	line-height: 1.6em;
+	}
+
+.widecolumn .postmetadata {
+	margin-top:10px;
+}
+
+.narrowcolumn .postmetadata {
+	text-align: center;
+	}
+
+.thread-alt {
+	background-color: #f8f8f8;
+}
+.thread-even {
+	background-color: white;
+}
+.depth-1 {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+}
+
+.children .even, .children .alt {
+border: 0;
+	border-left: 1px solid #ddd;
+}
+
+#footer {
+	background: #eee url("resources/kubrickfooter.jpg") no-repeat top;
+	border: none;
+	}
+
+small {
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-weight: bold;
+	}
+
+h1 {
+	font-size: 4em;
+	text-align: center;
+	}
+
+#headerimg .description {
+	font-size: 1.2em;
+	text-align: center;
+	}
+
+h2 {
+	font-size: 1.6em;
+	}
+
+h2.pagetitle {
+	font-size: 1.6em;
+	}
+
+#sidebar h2 {
+	font-family: 'Lucida Grande', Verdana, Sans-Serif;
+	font-size: 1.2em;
+	}
+
+h3 {
+	font-size: 1.3em;
+	}
+
+h1, h1 a, h1 a:hover, h1 a:visited, #header a:hover, #header a:visited, #headerimg .description {
+	text-decoration: none;
+	color: white;
+	}
+
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
+	color: #333;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar h2, #wp-calendar caption, cite {
+	text-decoration: none;
+	}
+
+.entry p a:visited, .text a:visited {
+	color: #b85b5a;
+	}
+.sticky {
+background: #f7f7f7;
+padding: 0 10px 10px 10px;
+}
+.sticky h2 {
+padding-top: 10px;
+}
+
+.comment-spam {
+    font-size:1.2em;
+    font-weight:bold;
+    padding:2px;
+    background-color:#c00;
+    color:#fff
+}
+
+#sidebar {
+	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
+	color: #777;
+	}
+
+code {
+	font: 1.1em 'Courier New', Courier, Fixed;
+	}
+
+acronym, abbr, span.caps
+{
+	font-size: 0.9em;
+	letter-spacing: .07em;
+	}
+
+a, h2 a:hover, h3 a:hover {
+	color: #06c;
+	text-decoration: none;
+	}
+
+a:hover {
+	color: #147;
+	text-decoration: underline;
+	}
+
+/* End Typography & Colors */
+
+
+
+/* Begin Structure */
+body {
+	margin: 0 0 20px 0;
+	padding: 0;
+	}
+
+#page {
+	background-color: white;
+	margin: 20px auto;
+	padding: 0;
+	width: 760px;
+	border: 1px solid #959596;
+	}
+
+#header {
+	background-color: #73a0c5;
+	margin: 0 0 0 1px;
+	padding: 0;
+	height: 200px;
+	width: 758px;
+	}
+
+#headerimg {
+	margin: 0;
+	height: 200px;
+	width: 100%;
+	}
+
+.narrowcolumn {
+	float: left;
+	padding: 0 0 20px 45px;
+	margin: 0px 0 0;
+	width: 450px;
+	}
+
+.widecolumn {
+	padding: 10px 0 20px 0;
+	margin: 5px 0 0 150px;
+	width: 450px;
+	}
+
+.post {
+	margin: 0 0 40px;
+	text-align: justify;
+	}
+
+.post hr {
+	display: block;
+	}
+
+.widecolumn .post {
+	margin: 0;
+	}
+
+.narrowcolumn .postmetadata {
+	padding-top: 5px;
+	}
+
+.widecolumn .postmetadata {
+	margin-top: 30px;
+	}
+
+.widecolumn .smallattachment {
+	text-align: center;
+	float: left;
+	width: 128px;
+	margin: 5px 5px 5px 0px;
+}
+
+.widecolumn .attachment {
+	text-align: center;
+	margin: 5px 0px;
+}
+
+.postmetadata {
+	clear: both;
+}
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	padding: 0;
+	margin: 0 auto;
+	width: 760px;
+	clear: both;
+	}
+
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+	}
+/* End Structure */
+
+
+
+/*	Begin Headers */
+h1 {
+	padding-top: 70px;
+	margin: 0;
+	}
+
+h2 {
+	margin: 30px 0 0;
+	}
+
+h2.pagetitle {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#sidebar h2 {
+	margin: 5px 0 0;
+	padding: 0;
+	}
+
+,post h2 {
+	text-align: left;
+	}
+
+h3 {
+	padding: 0;
+	margin: 30px 0 0;
+	}
+
+/* End Headers */
+
+
+
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered, img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+
+/* End Images */
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul, html>body .text ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	}
+
+html>body .entry li, html>body .text li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul li:before, .text ul li:before, #sidebar ul ul li:before {
+	content: "\00BB \0020";
+	}
+
+*:first-child+html>body .entry ul,
+*:first-child+html>body .text ul {
+	margin-left: 0;
+	padding: 0 0 0 30px;
+	list-style: disc;
+	padding-left: 10px;
+	text-indent: 10px;
+	}
+
+*:first-child+html>body .entry ul li,
+*:first-child+html>body .text ul li{
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ol, .text ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li, .text ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 15px;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;
+	}
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 10px auto;
+	padding: 5px 3px;
+	text-align: center;
+	}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 2px;
+	}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+	}
+
+.entry form { /* This is mainly for password protected posts, makes them look better. */
+	text-align:center;
+	}
+
+select {
+	width: 130px;
+	}
+/* End Form Elements */
+
+
+/* Begin Entry List */
+div.list div.pagination {
+    clear:both;
+    margin-left:40px;
+    height:20px;
+}
+
+div.list div.pagination div.previous {
+    float:left;
+}
+
+div.list div.pagination div.next {
+    float:right;
+}
+/* End Entry List */
+
+
+/* Begin Sidebar */
+#sidebar
+{
+	padding: 20px 0 10px 0;
+	margin-left: 545px;
+	width: 190px;
+	}
+
+#sidebar form {
+	margin: 0;
+	}
+/* End Sidebar */
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {
+	cursor: help;
+	}
+
+acronym, abbr {
+	border-bottom: 1px dashed #999;
+	}
+
+blockquote {
+	margin: 15px 30px 0 10px;
+	padding-left: 20px;
+	border-left: 5px solid #ddd;
+	}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	}
+
+.center {
+	text-align: center;
+	}
+
+.hidden {
+	display: none;
+	}
+
+hr {
+	display: none;
+	}
+
+a img {
+	border: none;
+	}
+
+.navigation {
+	height:10px;
+    display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 60px;
+	}
+/* End Various Tags & Classes*/
+
+
+/* Begin Captions */
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* End captions */
+
+
+/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
+	It won't be a stylish marriage, I can't afford a carriage.
+	But you'll look sweet upon the seat of a bicycle built for two." */
+
+/* Inline CSS copied here from HTML */
+
+body { background: url("resources/kubrickbgcolor.jpg"); }
+#header { background: url("resources/kubrickheader.jpg") no-repeat bottom center; }
+#footer { background: url("resources/kubrickfooter.jpg") no-repeat bottom; border: none;}
+#header 	{ margin: 0 !important; margin: 0 0 0 1px; padding: 1px; height: 198px; width: 758px; }
+#headerimg 	{ margin: 7px 9px 0; height: 192px; width: 740px; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: ; }
+#headerimg h1 a, #headerimg .description { display:  }
+
+#page { background: url("resources/kubrickbg.jpg") repeat-y top; border: none; }

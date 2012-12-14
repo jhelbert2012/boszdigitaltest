@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" immediate="true" name="com.boszdigital.training.services.ArchivePages">
+        <implementation class="com.boszdigital.training.services.ArchivePages"/>
+        <service servicefactory="false">
+            <provide interface="com.day.cq.workflow.exec.WorkflowProcess"/>
+        </service>
+        <property name="service.description" type="String" value="Archive pages" private="false"/>
+        <property name="service.vendor" type="String" value="Boszdigital" private="false"/>
+        <property name="process.label" type="String" value="Archive pages" private="false"/>
+        <property name="service.pid" value="com.boszdigital.training.services.ArchivePages" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.boszdigital.training.services.DeletePages">
+        <implementation class="com.boszdigital.training.services.DeletePages"/>
+        <service servicefactory="false">
+            <provide interface="com.day.cq.workflow.exec.WorkflowProcess"/>
+        </service>
+        <property name="service.description" type="String" value="Delete pages" private="false"/>
+        <property name="service.vendor" type="String" value="Boszdigital" private="false"/>
+        <property name="process.label" type="String" value="Delete pages" private="false"/>
+        <property name="service.pid" value="com.boszdigital.training.services.DeletePages" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.boszdigital.training.services.GoodbyeWorldService">
+        <implementation class="com.boszdigital.training.services.GoodbyeWorldService"/>
+        <service servicefactory="false">
+            <provide interface="com.boszdigital.training.services.GoodbyeWorldService"/>
+        </service>
+        <property name="service.vendor" type="String" value="CQ Blueprints" private="false"/>
+        <property name="service.description" type="String" value="Provides a friendly farewell." private="false"/>
+        <property name="service.pid" value="com.boszdigital.training.services.GoodbyeWorldService" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.boszdigital.training.services.ListPropertiesService">
+        <implementation class="com.boszdigital.training.services.ListPropertiesService"/>
+        <service servicefactory="false">
+            <provide interface="com.boszdigital.training.services.ListPropertiesService"/>
+        </service>
+        <property name="service.vendor" type="String" value="Boszdigital" private="false"/>
+        <property name="service.description" type="String" value="Helping list properties." private="false"/>
+        <property name="service.pid" value="com.boszdigital.training.services.ListPropertiesService" private="false"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.boszdigital.training.services.OrderBySelectService">
+        <implementation class="com.boszdigital.training.services.OrderBySelectService"/>
+        <service servicefactory="false">
+            <provide interface="com.day.cq.workflow.exec.WorkflowProcess"/>
+        </service>
+        <property name="service.description" type="String" value="Order By Select" private="false"/>
+        <property name="service.vendor" type="String" value="Boszdigital" private="false"/>
+        <property name="process.label" type="String" value="Order By Select" private="false"/>
+        <property name="service.pid" value="com.boszdigital.training.services.OrderBySelectService" private="false"/>
+    </scr:component>
+</components>
